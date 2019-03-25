@@ -1,0 +1,9 @@
+create database task;
+create schema public;
+create table string_statistics
+(
+  id serial not null primary key,
+  date_and_time timestamp not null,
+  input_data varchar(100) not null,
+  output_data varchar(100) not null
+);
